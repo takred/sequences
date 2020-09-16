@@ -25,9 +25,9 @@ public class Main {
         numbers.add(1);
 
         for (int i = 1; i < numbers.size() / 2; i++) {
-            Integer sequencesElement = numbers.get(0);
-            Integer integer = numbers.get(i);
-            if (sequencesElement.equals(integer)
+            Integer firstElement = numbers.get(0);
+            Integer comparedNumber = numbers.get(i);
+            if (firstElement.equals(comparedNumber)
                     && searchSequences.fragmentSequenceSearch(i - 1, numbers)) {
                 System.out.println("Лист состоит из последовательностей.");
                 break;
